@@ -1,0 +1,25 @@
+Secret Santa 2023 
+
+Projet : 
+{
+	Nom : Kapakopolstov
+	Version : 1.0.0
+	Framework : Django
+	Langages : 
+	{
+		Python,
+		JavaScript,
+		HTML5,
+		CSS3,
+	}
+}
+
+Application :
+{
+	Nom : Noelbos
+	Version : Stable - 1.423
+}
+
+en cas de bug ou de demandes en rapport avec l'application : contact.pandoriane@gmail.com
+
+for any issues or technical related inquiries, please contact : contact.pandoriane@gmail.com
