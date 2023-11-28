@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@keyframes color {
+  0%
+  {
+    background-position: 0 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes float {
+  0%
+  {
+    transform: translateY(0);
+  }
+  25%
+  {
+    transform: translateY(10px);
+  }
+  50%
+  {
+    transform: translateY(0);
+  }
+  75%
+  {
+    transform: translateY(-10px);
+  }
+  100%
+  {
+    transform: translateY(0);
+  }
+}
+
+  /*                             Divs                                    */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #FA9F00, #2C6CFF, #1051EB, #6C10F6);
+  background-size: 300% 300%;
+  animation: color 16s ease-in-out infinite;
+}
+
+#index-main-cont
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#i-main-t
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 2%;
+  margin: auto;
+  text-align: center;
+}
+
+.index-main
+{
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#main-frm
+{
+  position: absolute;
+  top: 14%;
+  left: 10%;
+  bottom: 10%;
+  right: 10%;
+  background-color: rgba(235, 235, 235, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 30px 30px 30px 30px;
+  transition: background-color 0.4s ease-in-out, opacity 0.3s ease-in-out, transform ease-in-out;
+  animation: float 8s linear infinite;
+  box-sizing: border-box;
+}
+#main-frm:hover{
+  background: rgba(235, 235, 235, 0.6);
+  animation: float 1s linear forwards;
+  border: 2px solid transparent;
+}
+
+#main-frm-title
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-frm-content
+{
+  position: absolute;
+  top: 33%;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#launch
+{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(45deg, #FF3535, #FF8989, #FF3535);
+  background-size: 300% 300%;
+  border-radius: 50%;
+  font-size: 2.7vh;
+  cursor: pointer;
+  animation: color 1s linear infinite;
+  overflow: hidden;
+}
+
+#hidden-one
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+#title
+{
+  font-family: "Cinzel";
+  font-size: 3vh;
+  cursor: default;
+}
+
+h2
+{
+  font-size: 7vh;
+  cursor: default;
+}
+
+#spandisc
+{
+  font-size: 5vh;
+  cursor: default;
+  width: 99%;
+  text-align: center;
+}
+
+#kadoname
+{
+  font-family: "Cinzel";
+  font-size: 20vh;
+  cursor: default;
+}
